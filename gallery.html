@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Luxe Traveler Gallery - Visual Journeys & Inspirations</title>
+        <meta name="description" content="Explore stunning photography from breathtaking destinations around the world. Get inspired for your next luxury adventure with the Luxe Traveler Gallery.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUA6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Luxe<span>Traveler</span>
+                </a>
+                <button type = "button" id = "navbar-show-btn" class = "flex" aria-label="Toggle navigation menu">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex" aria-label="Close navigation menu">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link active">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About Us</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class = "flex header-sm gallery-header">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Our Visual Journeys</h1>
+                    <p>Immerse yourself in the beauty of the world through our curated collection of travel photography. Let these images ignite your wanderlust and inspire your next great adventure.</p>
+                </div>
+            </div>
+        </header>
+        <section id = "gallery" class = "py-5">
+            <div class = "container">
+                <div class = "title-wrap fade-in-element">
+                    <span class = "sm-title">A Visual Feast of Global Wonders</span>
+                    <h2 class = "lg-title">Explore Our Collections</h2>
+                </div>
+                <div class = "gallery-row">
+                    <div class = "gallery-item">
+                        <img src = "images/Turquoise waters and white sand beach in the Caribbean.jpg" alt = "Turquoise waters and white sand beach in the Caribbean">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/Snow-capped mountain range.jpg" alt = "Snow-capped mountain range">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/goldengate.jpg" alt = "Golden Gate Bridge in San Francisco at sunset">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/cappadocia.jpg" alt = "Colorful hot air balloons over Cappadocia, Turkey">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/Aurora Borealis (Northern Lights) over a forest.jpg" alt = "Aurora Borealis (Northern Lights) over a forest">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/Elephants on a savanna during an African safari.jpg" alt = "Elephants on a savanna during an African safari">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/Aerial view of New York City skyline at dusk.jpg" alt = "Aerial view of New York City skyline at dusk">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/venicecanal.jpg" alt = "Canal in Venice, Italy with gondolas">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                    <div class = "gallery-item">
+                        <img src = "images/Overwater bungalows in Bora Bora, French Polynesia.jpg" alt = "Overwater bungalows in Bora Bora, French Polynesia">
+                        <span class = "zoom-icon" aria-label="View image larger"><i class = "fas fa-search-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id = "img-modal-box"> <div id = "img-modal">
+                <button type = "button" id = "modal-close-btn" class = "flex" aria-label="Close image modal">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <button type = "button" id = "prev-btn" class = "flex" aria-label="Previous image">
+                    <i class = "fas fa-chevron-left"></i>
+                </button>
+                <button type = "button" id = "next-btn" class = "flex" aria-label="Next image">
+                    <i class = "fas fa-chevron-right"></i>
+                </button>
+                <img src = "" alt="Enlarged gallery image">
+            </div>
+        </div>
+        <section id = "popular" class = "py-5">
+            <div class="container">
+                <div class = "title-wrap fade-in-element">
+                    <span class = "sm-title">Discover sought-after destinations from around the globe</span>
+                    <h2 class = "lg-title">Trending Now: Popular Places</h2>
+                </div>
+
+                <div class = "popular-row">
+                     <div class = "popular-item">
+                        <img src = "images/eiffeltower.jpg" alt = "Eiffel Tower at sunset in Paris, France">
+                        <div>
+                            <span>Eiffel Tower, Paris, France</span>
+                            <ul class = "rating flex">
+                                <li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star-half-alt"></i></li>
+                                <li>12,500+ reviews</li>
+                            </ul>
+                            <p class = "text">An iconic symbol of love and art, Paris offers romantic strolls, world-class museums, and exquisite cuisine.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item">
+                        <img src = "images/machu.jpg" alt = "Ancient ruins of Machu Picchu in Peru">
+                        <div>
+                            <span>Machu Picchu, Peru</span>
+                            <ul class = "rating flex">
+                                <li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li>
+                                <li>9,800+ reviews</li>
+                            </ul>
+                            <p class = "text">Explore the ancient Incan citadel nestled high in the Andes Mountains, a testament to a lost civilization.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item">
+                        <img src = "images/santorini.jpg" alt = "White buildings with blue domes in Santorini, Greece">
+                        <div>
+                            <span>Santorini, Greece</span>
+                            <ul class = "rating flex">
+                                <li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star-half-alt"></i></li>
+                                <li>15,300+ reviews</li>
+                            </ul>
+                            <p class = "text">Witness breathtaking sunsets, explore charming white-washed villages, and relax on unique volcanic beaches.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item">
+                        <img src = "images/kyoto.jpg" alt = "Fushimi Inari Shrine with red torii gates in Kyoto, Japan">
+                        <div>
+                            <span>Kyoto, Japan</span>
+                            <ul class = "rating flex">
+                                <li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li><li><i class = "fas fa-star"></i></li>
+                                <li>11,000+ reviews</li>
+                            </ul>
+                            <p class = "text">Immerse yourself in ancient temples, traditional gardens, and the geisha district in Japan's cultural heart.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Luxe<span>Traveler</span>
+                    </a>
+                    <p class = "text">Let our gallery transport you to far-off lands and inspire your next adventure. Discover the world's beauty, one image at a time, with Luxe Traveler.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Connect With Us</h2>
+                    <ul class = "social-links">
+                        <li><a href = "https://www.facebook.com/yourprofile" aria-label="Facebook Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook" width="30" height="30"></a></li>
+                        <li><a href = "https://www.instagram.com/yourprofile" aria-label="Instagram Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30"></a></li>
+                        <li><a href = "https://twitter.com/yourprofile" aria-label="Twitter Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" width="30" height="30"></a></li>
+                        <li><a href = "https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30"></a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Photo Collections</h2>
+                    <ul>
+                        <li><a href = "#">Beaches & Islands</a></li>
+                        <li><a href = "#">Mountains & Peaks</a></li>
+                        <li><a href = "#">Urban Landscapes</a></li>
+                        <li><a href = "#">Wildlife Wonders</a></li>
+                        <li><a href = "#">Cultural Heritage Sites</a></li>
+                        <li><a href = "#">Luxury Stays</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Get Exclusive Previews!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Your Email for Inspiration" class = "form-control" aria-label="Email for newsletter">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+             <div class="footer-bottom container">
+                 <p>&copy; <span id="currentYear"></span> Luxe Traveler. All Rights Reserved. See the World in Style.</p>
+            </div>
+        </footer>
+        <script src = "js/script.js"></script>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            // Gallery-specific JS is now part of the main script.js for better organization
+        </script>
+    </body>
+</html> 

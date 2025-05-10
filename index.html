@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Luxe Traveler - Your Journey to Extraordinary Begins Here</title>
+        <meta name="description" content="Discover breathtaking destinations and craft your dream luxury vacation with Luxe Traveler. Personalized itineraries, exclusive deals, and unforgettable experiences.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUA6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Luxe<span>Traveler</span>
+                </a>
+                <button type = "button" id = "navbar-show-btn" class = "flex" aria-label="Toggle navigation menu">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex" aria-label="Close navigation menu">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link active">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About Us</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Leave Your Footprints Across The World</h1>
+                    <p>Embark on unforgettable journeys to the world's most exquisite destinations. Explore curated experiences and luxurious getaways tailored just for you.</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Find Your Next Adventure:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination (e.g., Paris, Maldives)" aria-label="Destination">
+                        <input type="date" class = "form-control" aria-label="Travel Date">
+                        <input type="text" class = "form-control" placeholder="Budget (e.g., $5000)" aria-label="Budget">
+                        <input type="submit" class = "btn" value = "Search Trips">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section id = "featured" class = "py-5">
+            <div class = "container">
+                <div class = "title-wrap fade-in-element">
+                    <span class = "sm-title">Discover handpicked destinations for your ultimate escape</span>
+                    <h2 class = "lg-title">Featured Destinations</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2">
+                        <img src = "images/maldives.jpg" alt = "Luxurious beach resort in the Maldives">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Fuvahmulah, Maldives
+                            </span>
+                            <div>
+                                <p class = "text">Escape to a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Perfect for diving, snorkeling, or simply unwinding in luxury.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2">
+                        <img src = "images/riodejaneiro.jpg" alt = "Rio De Janeiro, Brazil">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Rio De Janeiro, Brazil
+                            </span>
+                            <div>
+                                <p class = "text">Experience the vibrant culture, stunning beaches, and iconic landmarks of Rio. From samba rhythms to breathtaking views from Christ the Redeemer, an adventure awaits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "featured-item my-2">
+                        <img src = "images/paris.jpg" alt = "Eiffel Tower in Paris, France">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Paris, France
+                            </span>
+                            <div>
+                                <p class = "text">Indulge in the romance of Paris, from iconic landmarks like the Eiffel Tower to charming streets, world-class art, and exquisite culinary delights.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2">
+                        <img src = "images/rome.jpg" alt = "Colosseum in Rome, Italy">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Rome, Italy
+                            </span>
+                            <div>
+                                <p class = "text">Step back in time in the Eternal City. Explore ancient ruins like the Colosseum, toss a coin in the Trevi Fountain, and savor authentic Italian pasta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class = "featured-item my-2">
+                        <img src = "images/kyoto.jpg" alt = "Kyoto, Japan">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kyoto, Japan
+                            </span>
+                            <div>
+                                <p class = "text">Immerse yourself in the serene beauty of ancient temples, traditional gardens, and vibrant geisha districts in Japan's cultural heart.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class = "featured-item my-2">
+                        <img src = "images/santorini.jpg" alt = "Santorini island with white buildings and blue domes, Greece">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Santorini, Greece
+                            </span>
+                            <div>
+                                <p class = "text">Witness breathtaking sunsets over the Aegean Sea, explore charming white-washed villages, and relax on unique volcanic beaches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "services" class = "py-5">
+            <div class = "container">
+                <div class = "title-wrap fade-in-element">
+                    <span class = "sm-title">Experience travel like never before with our exclusive offerings</span>
+                    <h2 class = "lg-title">Our Signature Services</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-concierge-bell"></i>
+                        </span>
+                        <h3>Bespoke Itineraries</h3>
+                        <p class = "text">Our experts craft personalized travel plans tailored to your unique desires, ensuring every moment of your journey is unforgettable and seamlessly organized.</p>
+                        <a href = "contact.html" class = "btn">Plan Your Trip</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-gem"></i>
+                        </span>
+                        <h3>Exclusive Access</h3>
+                        <p class = "text">Gain entry to private villas, unique cultural experiences, and hidden gems not available to the general public, all curated for the discerning traveler.</p>
+                        <a href = "about.html" class = "btn">Discover More</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-shield-alt"></i>
+                        </span>
+                        <h3>Peace of Mind</h3>
+                        <p class = "text">Travel with confidence knowing that every detail is managed, with 24/7 support and a commitment to your safety and comfort throughout your journey.</p>
+                        <a href = "contact.html#faq" class = "btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "testimonials" class = "py-5">
+            <div class = "container">
+                <div class = "title-wrap fade-in-element">
+                    <span class = "sm-title">Hear from our delighted adventurers</span>
+                    <h2 class = "lg-title">Client Experiences</h2>
+                </div>
+
+                <div class = "test-row">
+                     <div class = "test-item">
+                        <p class = "text">"Luxe Traveler curated the most incredible safari for us in Tanzania. From the luxury lodges to the knowledgeable guides, every aspect exceeded our expectations. A truly once-in-a-lifetime experience!"</p>
+                        <div class = "test-item-info">
+                            <img src = "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=faces" alt = "Testimonial from The Miller Family">
+                            <div>
+                                <h3>The Miller Family</h3>
+                                <p class = "text">Safari in Tanzania</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">"Our honeymoon in the Amalfi Coast, planned by Luxe Traveler, was pure magic. The attention to detail, the romantic excursions, and the stunning hotel choices made it absolutely perfect. We couldn't have asked for more."</p>
+                        <div class = "test-item-info">
+                             <img src = "https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=faces" alt = "Testimonial from Aisha & Ben K.">
+                            <div>
+                                <h3>Aisha & Ben K.</h3>
+                                <p class = "text">Amalfi Coast Honeymoon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">"Exploring the cultural wonders of Japan with Luxe Traveler was an enlightening experience. Their local connections provided us with unique insights and access we wouldn't have found on our own. Highly recommended!"</p>
+                        <div class = "test-item-info">
+                            <img src = "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=faces" alt = "Testimonial from David Chen">
+                            <div>
+                                <h3>David Chen</h3>
+                                <p class = "text">Cultural Tour of Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "video" class="py-5">
+            <div class="container fade-in-element">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Experience the Allure of Travel</span>
+                    <h2 class = "lg-title">Watch Our Journeys</h2>
+                </div>
+                <div class = "video-wrapper flex">
+                    <video loop autoplay poster="https://images.pexels.com/photos/2405629/pexels-photo-2405629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <source src="videos/video-section.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button type = "button" id = "play-btn" aria-label="Play video">
+                        <i class = "fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Luxe<span>Traveler</span>
+                    </a>
+                    <p class = "text">Crafting unforgettable luxury travel experiences worldwide. Let us turn your dream vacation into a reality. Explore, discover, and indulge with Luxe Traveler.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Connect With Us</h2>
+                    <ul class = "social-links">
+                        <li><a href = "https://www.facebook.com/yourprofile" aria-label="Facebook Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook" width="30" height="30"></a></li>
+                        <li><a href = "https://www.instagram.com/yourprofile" aria-label="Instagram Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30"></a></li>
+                        <li><a href = "https://twitter.com/yourprofile" aria-label="Twitter Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" width="30" height="30"></a></li>
+                        <li><a href = "https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn Profile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30"></a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Explore Further</h2>
+                    <ul>
+                        <li><a href = "about.html">Our Story</a></li>
+                        <li><a href = "#services">Services</a></li>
+                        <li><a href = "blog.html">Travel Insights</a></li>
+                        <li><a href = "contact.html#faq">FAQs</a></li>
+                        <li><a href = "#">Careers With Us</a></li>
+                        <li><a href = "#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Join Our Exclusive Circle</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Your Email Address" class = "form-control" aria-label="Email for newsletter">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom container">
+                 <p>&copy; <span id="currentYear"></span> Luxe Traveler. All Rights Reserved. Crafted with passion.</p>
+                 <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            </div>
+        </footer>
+        <script src = "js/script.js"></script>
+        <script>
+            // Inline script for current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
