@@ -1,0 +1,258 @@
+/* Retain existing responsive rules and adjust as needed for new styles */
+/* It's crucial to test thoroughly on different devices */
+
+@media screen and (max-width: 460px){
+    .header-title h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+    .header-title p {
+        font-size: 1rem;
+    }
+    .header-form {
+        padding: 1.5rem;
+    }
+    .featured-item-content{ /* Keep existing or adjust if new styles conflict */
+        transform: translateY(calc(100% - 40px - 1rem)); /* Show only title */
+    }
+    .featured-item-content span {
+        font-size: 1.1rem;
+    }
+     .popular-item div {
+        transform: translateY(calc(100% - 50px - 1rem)); /* Show title */
+    }
+    .popular-item div span {
+        font-size: 1.1rem;
+    }
+
+    .lg-title { font-size: 1.8rem; }
+    .sm-title { font-size: 1rem; }
+
+    .facts-info strong { font-size: 1.8rem;}
+    .contact-icon { width: 45px; height: 45px; font-size: 1.3rem; margin-right: 1rem;}
+    .contact-item div span { font-size: 1.1rem;}
+    .contact-item div p.text { font-size: 0.9rem;}
+}
+
+@media screen and (min-width: 678px){ /* Tablet */
+    .test-item::after{
+        left: 4rem;
+        transform: translateX(0); /* Keep as is if it works with new info style */
+    }
+    .test-item-info{ /* Keep as is if the flex alignment works */
+        left: 4rem;
+        transform: translateX(0);
+        text-align: left;
+        /* display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 1rem; */ /* Alternative if flex not sufficient */
+    }
+     .test-item-info img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px){ /* Larger Tablet / Small Desktop */
+    .header-title h1 { font-size: 3rem; }
+    .header-title p{ font-size: 1.1rem; }
+
+    .header-form form{
+        /* Consider flex-direction: row for larger screens if inputs are few */
+        /* Example:
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        */
+    }
+    .header-form .form-control {
+        /* If row direction:
+        flex: 1 1 200px;
+        margin-bottom: 0;
+        */
+    }
+     .header-form .btn {
+        /* If row direction:
+        flex-basis: auto;
+        align-self: flex-end; Adjust alignment if needed
+        */
+    }
+
+
+    .featured-row, .services-row, .footer-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More flexible grid */
+        gap: 2rem;
+    }
+    .featured-item, .services-item{
+        margin: 0;
+    }
+    .footer-row{
+        text-align: left;
+    }
+    .footer-item p.text { /* Align left on larger screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .social-links{
+        justify-content: flex-start;
+    }
+    .social-links li:nth-child(1){
+        margin-left: 0;
+    }
+    .subscribe-form form{
+        align-items: flex-start;
+    }
+     .subscribe-form .form-control {
+        margin-left: 0; /* Ensure it aligns left */
+    }
+
+
+    .gallery-row, .popular-row, .blog-row { /* More flexible grid */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem; /* Consistent gap */
+    }
+    .gallery-item{
+        margin: 0;
+    }
+
+    .facts-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px){ /* Desktop */
+    .header-title h1{ font-size: 3.5rem; } /* Back to larger size */
+    .header-form { max-width: 900px;} /* Wider form on desktop */
+    .header-form form{
+        flex-direction: row; /* Horizontal form on desktop */
+        align-items: center; /* Align items vertically */
+        gap: 1rem; /* Gap between form elements */
+    }
+    .header-form .form-control, .header-form .btn{
+        margin: 0; /* Remove vertical margins */
+        flex: 1; /* Distribute space for inputs */
+    }
+    .header-form .form-control[type="date"] {
+        flex-grow: 0.8; /* Date input might not need full flex:1 */
+    }
+    .header-form .form-control[type="number"] {
+        flex-grow: 0.6;
+    }
+    .header-form .btn{
+        flex: 0 0 auto; /* Button takes its content size */
+        padding: 0.9rem 1.5rem; /* Adjust padding if needed */
+    }
+
+    /* Navbar for Desktop */
+    #navbar-show-btn{
+        display: none;
+    }
+    #navbar-collapse{
+        display: flex !important; /* Important to override inline style from JS */
+        background-color: transparent;
+        transform: translateX(0);
+        height: auto;
+        padding: 0;
+        position: static;
+        width: auto; /* Auto width for desktop nav */
+        box-shadow: none;
+        overflow-y: visible;
+    }
+    #navbar-close-btn{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row; /* Horizontal nav items */
+        justify-content: flex-end;
+        margin: 0;
+        align-items: center;
+    }
+    .nav-item{
+        margin: 0;
+        margin-left: 0.5rem; /* Spacing between nav items */
+    }
+     .nav-item:first-child {
+        margin-left: 0;
+    }
+    .nav-link {
+        padding: 0.5rem 1rem; /* Padding for desktop nav links */
+        font-size: 1rem; /* Adjust font size if needed */
+        font-weight: 500;
+    }
+
+
+    .test-row, .contact-row{ /* Keep as 2 columns or adjust */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem; /* Increased gap */
+    }
+     .about-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        align-items: center;
+    }
+
+
+    .popular-row, .blog-row{ /* 3 columns for these on desktop */
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Minmax for better wrapping */
+    }
+    .facts-row{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4 columns for facts */
+    }
+
+    .contact-form .form-control{
+        margin-left: 0;
+    }
+    .contact-form .form-control:nth-child(1){
+        margin-top: 0;
+    }
+    .contact-right{
+        margin: 0;
+        padding-left: 3rem; /* More padding on desktop */
+    }
+    .contact-form .btn{
+        margin-left: 0;
+    }
+    .contact-icon{
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .contact-item{
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .contact-item:nth-child(1){
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1140px; /* Slightly narrower for very large screens if desired */
+    }
+    .test-row, .gallery-row{
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Adjust minmax for better fit */
+    }
+    .footer-row, .popular-row, .blog-row { /* 4 columns for footer items, popular, blog on large screens */
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+     .footer-row .footer-item:first-child { /* Site brand in footer */
+        grid-column: span 1 / span 1; /* Default span */
+        /* Or make it take more space: grid-column: span 2 / span 2; */
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .container {
+        max-width: 1320px; /* Wider container for very large screens */
+    }
+    .featured-row, .services-row{
+        grid-template-columns: repeat(3, 1fr); /* Back to 3 columns for these */
+    }
+}
