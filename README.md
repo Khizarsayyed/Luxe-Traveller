@@ -16,16 +16,3 @@ utility.css: Reusable helper classes for rapid styling.
 style.css: Core website styling.
 responsive.css: Media queries for adaptive layouts.
 JavaScript: For implementing interactive elements, dynamic content, and client-side functionality.
-
-
-
-
-
-
-
-
-
-
-Canvas
-
-Gemini can make mistakes, so double-check it
